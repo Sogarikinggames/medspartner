@@ -1,0 +1,298 @@
+<!-- https://code-step.com/portfolio1-p2/ -->
+<!-- https://code-step.com/demo/html/portfolio1/# -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}メドパートナー{% endblock %}</title>
+    <meta name="description" content="Sosuke株式会社" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../static/img/medspartner.png" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <nav class="navbar">
+        <div class="logotitle">
+          <img src="../static/img/MedsPartner.png" alt="Meds Partner" class="title-icon">
+          <a href="/">
+           メッズパートナー
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="/#header">ホーム</a></li>
+          <li><a href="/#works">サービス内容</a></li>
+          <li><a href="/#price">ご利用料金</a></li>
+          <li><a href="/#news">ニュース</a></li>
+          <li><a href="/contact">お問い合わせ</a></li>
+          <li><a href="/aboutme">ヘルパーになる</a></li>
+          <li><a href="https://x.com/medspartner" target="_blank" rel="noopener noreferrer">
+            <img src="../static/img/logo-black.png" alt="twitter" class="icon">
+              </a>
+          </li>
+          <li><a href="https://www.instagram.com/meds.partner/" target="_blank" rel="noopener noreferrer">
+            <img src="../static/img/Instagram_logo.png" alt="instagram" class="icon">
+              </a>
+          </li>
+          <li>
+            <a href="https://lin.ee/AxnN3ba">
+              <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+            </a>
+          </li>
+
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+    </header>
+    {% block content %}
+    <main>
+      <!-- メインビジュアル -->
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="../static/img/homepagepicture.jpg">
+          <img class="mainvisualimg" src="../static/img/homepagepicture.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+      <!-- About -->
+      <section id="about" class="wrapper">
+        <div class="container">
+        <img src="../static/img/worriedoldlady.png" alt="Image" class="photo">
+        <div>
+        <div class="balloon1">
+        <h2>スマホやパソコンの使い方がよくわからない...</h2>
+        </div>
+        <div class="balloon1">
+        <h2>外出したいけど免許がないからいけない...</h2>
+        </div>
+        <div class="balloon1">
+        <h2>話し相手が欲しい...</h2>
+        </div>
+        </div>
+        </div>
+        <div class="container">
+        <div>
+        <div class="balloon2">
+        <h2>新しいことに挑戦してみたいけど一人でできる気がしない...</h2>
+        </div>
+        <div class="balloon2">
+        <h2>飛行機の予約やワクチン接種予約の使い方がわからない...</h2>
+        </div>
+        </div>
+        <img src="../static/img/worriedoldman.png" alt="Image" class="photo">
+        </div>
+        
+
+        <br>
+        <img src="../static/img/A_group_of_four_Japanese_university_students,_incl.jpg" alt="students">
+        <br>
+        <div>
+        <h1>私たちメッズパートナーにお任せください！</h1>
+        </div>
+        
+      </section>
+      <!-- Works -->
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">サービス内容</h2>
+        <ul>
+          <li>
+            <img src="../static/img/works1.jpg" alt="work1">
+            <p class="annotated">簡単なヘルスチェック！</p>
+          </li>
+          <li>
+            <img src="../static/img/works2.png" alt="work2">
+            <p>スマホ・パソコン周りのなんでもサポート！</p>
+          </li>
+          <li>
+            <img src="../static/img/works3.png" alt="work3">
+            <p class="annotated">健康カウンセリング！</p>
+          </li>
+          <li>
+            <img src="../static/img/works4.png" alt="work4">
+            <p>世話話など、何でもお話相手！</p>
+          </li>
+          <li>
+            <img src="../static/img/works5.png" alt="work5">
+            <p class="annotated">適切な医療機関への案内！</p>
+          </li>
+          <li>
+            <img src="../static/img/works6.png" alt="work6">
+            <p>配車や代行！</p>
+          </li>
+          <li>
+            <img src="../static/img/works7.png" alt="work1">
+            <p>買い物代行、サポート</p>
+          </li>
+          <li>
+            <img src="../static/img/works8.png" alt="work2">
+            <p>外出の付き添い</p>
+          </li>
+          <li>
+            <img src="../static/img/works9.png" alt="work3">
+            <p>書類作成・整理・清書</p>
+          </li>
+          <li>
+            <img src="../static/img/works10.png" alt="work3">
+            <p>AI(CHATGPT)の使い方！</p>
+          </li>
+        </ul>
+
+        <div>
+          <h2 class="sec-title">ご利用の流れ</h2>
+
+          <div class="flow py50">
+              <ul class="flex_center_pc">
+                  <li>
+                      <figure class="number1">
+                          <img src="../static/img/842916.png" alt="サービスのお申し込み">
+                          <h3 class="text-center">お問い合わせ</h3>
+                          <figcaption>ラインで友達追加していただき、希望するサービス、場所、日時についてお伺いします。<br>※ネット操作が難しい方は、お電話でもご予約を承ります。</figcaption>
+                      </figure>
+                  </li>
+                  <li>
+                      <figure class="number2">
+                          <img src="../static/img/22542107.png" alt="サービスのマッチング・お支払い">
+                          <h3 class="text-center">初回体験</h3>
+                          <figcaption>最適なヘルパーをマッチングしラインにて、ヘルパー決定とお支払いについてご連絡します。</figcaption>
+                      </figure>
+                  </li>
+                  <li>
+                      <figure class="number3">
+                          <img src="../static/img/872837.png" alt="サービスのご利用">
+                          <h3 class="text-center">ご利用</h3>
+                          <figcaption>ラインで、ヘルパーと直接やりとりが可能です。詳細のお打合せができます。</figcaption>
+                      </figure>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      </section>
+
+      
+
+      <!-- price section -->
+      <section id="price" class="wrapper">
+        <h2 class="sec-title">
+          ご利用料金
+        </h2>
+        <div class="l-box">
+          <div class="box-child-trial">
+            <div class="content-box1">
+              <p>初回体験プラン</p>
+              <p>¥2,500/2時間</p>
+              <p>初回体験キャンペーン価格で提供させていただきます。</p>
+            </div>
+          </div>
+          <div class="box-child-member">
+            <div class="content-box2">
+              <p>基本プラン</p>
+              <ul class="plan-list">
+                <li>
+                  <div class="box">
+                    <p>・一回利用プラン</p>
+                    <p>1回・1時間プラン　 2,800円　</p>
+                  </div>
+                  <p>お悩みごとの相談や解決など、利用したいときに1時間〜ご利用できるプランです。</p>
+                </li>
+                <li>
+                  <div class="box">
+                    <p>・会員プラン</p>
+                    <ul>
+                      <li>月2回・4時間コース　12,000円</li>
+                      <li>月4回・8時間コース　22,000円</li>
+                      <li>月6回・12時間コース　30,000円</li>
+                    </ul>
+                  </div>
+                  <p>会員プランは”専任パートナー”が個別お客様のご要望や興味などをヒアリングし、”日々の暮らしをより豊かにするためのお手伝い”をさせていただきます。</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- News -->
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2024/11/17</dt>
+          <dd>X公式アカウント、ライン公式アカウント、インスタ公式アカウントを作りました！是非フォローしてください！</dd>
+          <dt>2024/11/11</dt>
+          <dd>本サイトをリリースしました。</dd>
+          <dt>2024/10/23</dt>
+          <dd>メッズパートナーを起業しました。</dd>
+          <dt>2024/10/23</dt>
+          <dd>株式会社SOGARIを設立しました</dd>
+        </dl>
+      </section>
+      <!-- Contact -->
+      <section id="home-contact" class="wrapper">
+        <h2 class="sec-title">お問い合わせ・ご相談</h2>
+          <div>
+            <p>お電話でのご相談</p>
+            <p>
+              <a  class="phone_n" href="tel:+818034224620">
+                <img class="phone_icon"   src="../static/img/phone-solid.svg" alt="phone">
+                080-3422-4620
+              </a>
+            </p>
+            <p>受付時間: 9:00 〜 22:00</p>
+          </div>
+        <p>お問い合わせは以下のフォームから
+        </p>
+        <br>
+        <br>
+        <a class="contactbutton" href="/contact">お問い合わせフォームはこちら</a>
+      </section>
+    </main>
+    {% endblock %}
+
+    <div class="cv">
+      <div class="cv-container">
+        <p>サービスご利用の方はラインのお友達登録を！</p>
+        <a href="https://lin.ee/AxnN3ba">
+          <img class="line-picture" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+        </a>
+          <a class="contactbutton" href="/contact">お問い合わせはこちら</a>
+      </div>
+    </div>
+          <!-- Footer -->
+          <footer id="footer">
+            <p2>🄫株式会社SOGARI/メッズパートナー</p2>
+          </footer>
+          <script>
+            const menu = document.querySelector(".menu");
+            const burger = document.querySelector(".burger");
+            const navLinks = document.querySelectorAll(".menu li")
+          
+            burger.addEventListener("click",() => {
+                menu.classList.toggle("nav-active");
+                burger.classList.toggle("toggle");
+                
+                if (menu.classList.contains("nav-active")){
+                  document.body.classList.add('no-scroll');
+                }else{
+                  document.body.classList.remove('no-scroll');
+                }
+                
+            })
+
+            navLinks.forEach(link => {
+              link.addEventListener('click', function() {
+                menu.classList.remove('nav-active');
+                document.body.classList.remove('no-scroll');
+                burger.classList.remove('toggle');
+        });
+    });
+
+        </script>
+  </body>
+</html>
